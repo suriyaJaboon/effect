@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: topics
+  labels:
+    app: topics
+spec:
+  #  type: LoadBalancer
+  selector:
+    app: topics
+  ports:
+    - name: topics-3000
+      port: 3000
+      protocol: TCP

@@ -28,3 +28,10 @@ spec:
                 name: offset
                 port:
                   number: 1323
+          - path: /topics(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: topics
+                port:
+                  number: 3000

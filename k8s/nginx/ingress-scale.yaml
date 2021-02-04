@@ -18,3 +18,7 @@ spec:
             backend:
               serviceName: offset
               servicePort: 1323
+          - path: /topics
+            backend:
+              serviceName: topics
+              servicePort: 3000
